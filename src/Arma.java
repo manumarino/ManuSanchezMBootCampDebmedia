@@ -22,6 +22,5 @@ public abstract class Arma {
 
     }
 
-    public void imprime() {
-    }
+
 }
