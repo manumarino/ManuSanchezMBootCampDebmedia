@@ -17,6 +17,9 @@ public class Berzerker extends Guerrero{
             System.out.println("desarmado");
         }
     }
+    //aca una modificacion
+    boolean algo = true;
+
 
     public boolean cargaArma(Arma arma) {
         if (arma.getClass() == Espada.class) {
