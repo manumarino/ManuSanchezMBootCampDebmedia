@@ -9,19 +9,13 @@ public abstract class Arma {
         this.poderAtaque = poderAtaque;
     }
 
-    @Override
-    public String toString() {
-        return "Arma{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", poderAtaque=" + poderAtaque +
-                '}';
-    }
-
     public Arma() {
 
     }
 
     public void imprime() {
+
+
     }
+
 }

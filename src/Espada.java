@@ -1,11 +1,15 @@
 public class Espada extends Arma{
-    public Espada(int id, String nombre, double poderAtaque) {
-        super(id, nombre, poderAtaque);
-    }
 
     public Espada() {
 
+        System.out.println("Espada creada");
     }
+    public Espada(int id, String nombre, double poderAtaque) {
+        this.id = id;
+        this.nombre = nombre;
+        this.poderAtaque = poderAtaque;
+    }
+
     public int getId() {
         return id;
     }
@@ -30,10 +34,8 @@ public class Espada extends Arma{
         this.poderAtaque = poderAtaque;
     }
 
-
-
     public void imprime() {
-        System.out.println("Una Espada "+this.id+", "+this.nombre+", "+this.poderAtaque);
-
+        System.out.println("Espada ID: "+this.id+", Nombre: "+this.nombre+", Fuerza: "+this.poderAtaque);
     }
+
 }

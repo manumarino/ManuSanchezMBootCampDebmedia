@@ -1,37 +1,29 @@
-public abstract class Guerrero {
-    int id;
-    String nombre;
-    double fuerzaPersonaje;
-    Arma arma = null;
 
-    public Guerrero(int id, String nombre, double fuerzaPersonaje) {
+public abstract class Guerrero {
+    public int id;
+    public String nombre;
+    public double fuerza;
+
+    public Arma arma;
+
+    public void guerrero (int id, String nombre, double fuerza) {
         this.id = id;
         this.nombre = nombre;
-        this.fuerzaPersonaje = fuerzaPersonaje;
+        this.fuerza = fuerza;
     }
 
-
-
-    @Override
-    public String toString() {
-        return "Guerrero{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", fuerzaPersonaje=" + fuerzaPersonaje +
-                '}';
+    public double ataqueBasico() {
+        return 0;
     }
 
     public void imprime() {
     }
 
-    public boolean armado() {
-        return (this.arma != null);
-    }
-
     public boolean cargaArma(Arma arma) {
         return false;
     }
+
+    public boolean armado() {
+        return (this.arma != null);
+    }
 }
-
-
-
